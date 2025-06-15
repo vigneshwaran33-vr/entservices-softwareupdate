@@ -1320,7 +1320,7 @@ namespace WPEFramework
             network_available = checkNetwork();
             if (!network_available)
             {
-                int retry_count = 0;
+                int retry_count;
                 while (retry_count < MAX_NETWORK_RETRIES)
                 {
                     MM_LOGINFO("Network not available. Sleeping for %d seconds", NETWORK_RETRY_INTERVAL);
