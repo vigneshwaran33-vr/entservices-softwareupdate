@@ -93,7 +93,7 @@ namespace Utils
         static bool isThunderSecurityConfigured()
         {
             bool configured = false;
-            long http_code;
+            long http_code = 0;
             std::string jsonResp;
             CURL *curl_handle = NULL;
             CURLcode res = CURLE_OK;
