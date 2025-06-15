@@ -348,7 +348,7 @@ namespace WPEFramework {
             int ret =  -1;
             bool mediaclient = false;
             const char *failureReason = NULL;
-            char cpu_arch[8];
+            char cpu_arch[8] = {0};
             char headerinfofile[128] = {0};
             char difw_path[32] = {0};
             const char *rflag = "0";
